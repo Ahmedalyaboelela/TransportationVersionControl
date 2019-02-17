@@ -24,7 +24,10 @@ namespace Firstcoreangular.Controllers
         [HttpGet]
         public IEnumerable<PaymentDetails> GetPaymentDetails()
         {
+            int s = 5; 
             return _context.PaymentDetails;
+         
+            //test git
         }
 
 
@@ -40,6 +43,7 @@ namespace Firstcoreangular.Controllers
 
             if (id != paymentDetails.PMId)
             {
+             
                 return BadRequest();
             }
 
